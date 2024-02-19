@@ -1,0 +1,142 @@
+@import "./Another_style/index";
+
+.main-container {
+  //   background-color: aquamarine;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  .heading {
+    color: #000;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px red;
+    // background-color: #fff;
+    padding: 12px;
+    border-radius: 10px;
+    // box-shadow: 4px 1px 2px #ddd;
+    // margin-bottom: 6rem;
+  }
+  .h3-syle {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px #000;
+  }
+  .input-container {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    .input-text {
+      position: absolute;
+      left: 21.2rem;
+      padding: 11px;
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+      background-color: #ddd;
+      color: #000000;
+      font-weight: bold;
+    }
+    input {
+      padding: 11px;
+      border: 2px solid tomato;
+      border-radius: 4px;
+      font-size: 16px;
+      outline: none;
+      padding-left: 35px;
+    }
+
+    .copyBtn {
+      padding: 8px 15px;
+      margin-left: 5px;
+      border: 2px solid #ffffff;
+      font-size: 22px;
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      background-color: tomato;
+      color: #ffffff;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.4s;
+    }
+    .copyBtn:hover {
+      background-color: #ffffff;
+      color: tomato;
+      border: 2px solid tomato;
+    }
+  }
+  .changeBtn {
+    padding: 14px 106px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 23px;
+    border: 2px solid #ffffff;
+    background-color: tomato;
+    border-radius: 4px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.4s;
+  }
+  .changeBtn:hover {
+    background-color: #ffffff;
+    color: tomato;
+    border: 2px solid tomato;
+  }
+  .rbg-container {
+    input {
+      padding-left: 10px;
+      padding-right: 35px;
+      background-color: #ffffff;
+    }
+  }
+}
+
+.css-Toast-msg {
+  position: fixed;
+  right: 2rem;
+  top: 2rem;
+  z-index: 9999;
+  background-color: #5cb85c;
+  color: #ffffff;
+  font-size: 18px;
+  padding: 12px 20px;
+  border: 2px solid #ffffff;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+// CSS Animation style
+.toast-message-slide-in {
+  animation: toast-animation-in 0.5s ease-in;
+}
+
+.toast-message-slide-out {
+  animation: toast-animation-out 0.5s ease-in;
+}
+// Create css keyframes
+@keyframes toast-animation-in {
+  from {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes toast-animation-out {
+  from {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+}
